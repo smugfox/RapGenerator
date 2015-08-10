@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="author" content="Robin Fox">
+        <meta name="description" content="A Rap Generator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>RapGenerator</title>
+
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css">
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="../bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+          <header>
+            <h1 class="stroke">Rap Generator</h1>
+            <h2>Want to discover a new artist? Try it out!</h2>
+          </header>
+          <main>
+            <section class="rap-form">
+              <form>
+                <div class="question question-one">
+                  <h3>What type of rap are you looking for?</h3>
+                  <div class="answer-wrapper answer-wrapper-1">
+                    <input id="south" type="radio" name="rapType" value="south">
+                    <label for="south">Southern Rap</label>
+                  </div>
+                  <div class="answer-wrapper answer-wrapper-2">
+                    <input id="west" type="radio" name="rapType" value="west">
+                    <label for="west">West Coast Rap</label>
+                  </div>
+                  <div class="answer-wrapper answer-wrapper-3">
+                    <input id="east" type="radio" name="rapType" value="east">
+                    <label for="east">East Coast Rap</label>
+                  </div>
+                  <div class="answer-wrapper answer-wrapper-4">
+                    <input id="trap" type="radio" name="rapType" value="trap">
+                    <label for="trap">Trap</label>
+                  </div>
+                </div><!-- end of question-one -->
+                <div class="question question-two">
+                  <h3>What decade of rap are you looking for?</h3>
+                  <div class="answer-wrapper">
+                    <input id="nineties" type="radio" name="ninties-rap" value="ninties-rap">
+                    <label for="nineties">90's</label>
+                  </div>
+                  <div class="answer-wrapper">
+                    <input id="millennium" type="radio" name="millennium-rap" value="millennium-rap">
+                    <label for="millennium">2000's</label>
+                  </div>
+                  <div class="answer-wrapper">
+                    <input id="present" type="radio" name="present-rap" value="present-rap">
+                    <label for="present">Present</label>
+                  </div>
+                </div><!-- end of question-two -->
+                <div class="rap-button">
+                  <input type="submit" class="submit-rap" value="Gimme something new!">
+                </div>
+                <div class="reset-button display-none"></div>
+              </form>
+            </section><!-- end of section with form -->
+            <section class="rap-answer absolute hide">
+              <!-- this is where the rap answers go -->
+            </section>
+          </main><!-- end of main -->
+          <footer>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="#" data-text="Want to discover a new artist? Try it out!:" data-size="large" data-count="none">Tweet</a>
+            <p>&copy; <a href="https://twitter.com/smugfox"target="_blank">Robin Fox</a>
+          </footer>
+        </div><!-- .container -->
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- loading main js file -->
+        <script
+        src="scripts/main.js"
+        ></script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </body>
+</html>
